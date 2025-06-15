@@ -1,0 +1,96 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html>
+
+<!-- title of page and link to my stylesheet -->
+<head>
+	<title>ABOUT/NUDDIN</title>
+	<link href="style.css" rel="stylesheet">
+</head>
+
+<!-- body containing all visible page content -->
+<body>
+	<!-- navbar found at the top of the website -->
+	<table class="navbar" cellsize="auto" cellpadding="5px" border="5px">
+		<tr>
+			<td id="home" rowspan="2"><a href="index.html">
+				<center><img alt="nuddin logo" width="120px" height="40px" src="nuddin.png"></center>
+			</a></td>
+			<td><a href="index.html"><button>HOME</button></a></td>
+			<td class="active"><a href="about.html"><button>ABOUT</button></a></td>
+			<td><a href="faq.html"><button>FAQ</button></a></td>
+			<td><a href="careers.html"><button>CAREERS</button></a></td>
+			<td><a href="contact.html"><button>CONTACT</button></a></td>
+		</tr>
+		<tr>
+			<td><a href="nada.html"><button>NADA</button></a></td>
+			<td><a href="nothingPlus.html"><button>NOTHING+</button></a></td>
+			<td><a href="nothing.html"><button>NOTHING</button></a></td>
+			<td><a href="zilch.html"><button>ZILCH</button></a></td>
+			<td><a href="null.html"><button>NULL</button></a></td>
+		</tr>
+	</table>
+	
+	
+	<div class="content">
+		<!-- title of page and associated image -->
+		<center><h1>About</h1></center>
+		<hr>
+		<center><img alt="[ABOUT][About our company.]" width="600px" height="200px" src="nuddinAbout.png"></center>
+		<hr>
+		<!-- description of company mission -->
+		<h1>Our Mission</h1>
+		<p>
+			Like every good company in this day and age our aspiration is the destruction of society at its very core. Sadly, due to technical limitations and poor planning on the part of our CEO, CFO, General Manager, Art Director, Media Planner, Graphic Designer, Entry-level Employees, Human Resources Department, and Public Relations Department, we've had to abandon that plan and downscale our goals for the future.
+		<br><br>
+			We are currently in the midst of a large scale shakeup, in an attempt to refocus and get us back onto having some form of track to follow. You didn't hear that from us though. In the meantime we hope our service brings some joy to your life. 
+		</p><br>
+		<!-- top level management of NUDDIN -->
+		<h1>Our Managment</h1>
+		<h2>CEO - Mike Walston</h2>
+		<p>
+			Mike grew up in South East Wisconsin and is well known as both the former CEO of "Brandware" and "Tradesoft." He is rather infamous for his title of Wisconsin's most wanted man, having committed at least thirty-five federal crimes in the span of six weeks. Fortunately, his charges were dismissed as he was just too rich for them to properly arrest him. 
+		</p><br>
+		<h2>CFO - Dennis Walterman</h2>
+		<p>
+			Dennis is well known for his antics as the lead singer of his band "The Kickbackers," where he made a name for himself by embezzling all of the money meant to go to the stage hands that he replaced with groupies. He brings that same energy to our company and has legally made away with the asset portfolios of three of our competitors a homeless dude's sandwich.
+		</p><br>
+		<p><small><i>
+			Disclaimer: none of the names on this page are representitive of actual people. To be honest we have no clue who makes up our management.
+		</i></small></p><br><br>
+	</div>
+
+	<!-- script for hiding webpage content -->
+	<script>
+		document.querySelector("#home").addEventListener("mouseover", function(event){
+			document.querySelector(".content").style.display = "none"
+		})
+		document.querySelector("#home").addEventListener("mouseout", function(event){
+			document.querySelector(".content").style.display = "block"
+		})
+	</script>
+
+	<script type="module" src="https://s.brightspace.com/lib/bsi/20.23.2-185/unbundled/mathjax.js"></script>
+	<script type="text/javascript">
+		document.addEventListener('DOMContentLoaded', function() {
+			if (document.querySelector('math') || /\$\$|\\\(|\\\[|\\begin{|\\ref{|\\eqref{/.test(document.body.innerHTML)) {
+				document.querySelectorAll('mspace[linebreak="newline"]').forEach(elm => {
+					elm.setAttribute('style', 'display: block; height: 0.5rem;');
+				});
+				window.D2L.MathJax.loadMathJax({
+					'outputScale': 1.3,
+					'renderLatex': true
+				});
+			}
+		});
+	</script>
+	<script type="module" src="https://s.brightspace.com/lib/bsi/20.23.2-185/unbundled/prism.js"></script>
+	<script type="text/javascript">
+		document.addEventListener('DOMContentLoaded', function() {
+			document.querySelectorAll('.d2l-code').forEach(code => {
+				window.D2L.Prism.formatCodeElement(code);
+			});
+		});
+	</script>
+</body>
+
+
+</html>

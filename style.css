@@ -1,0 +1,96 @@
+* {
+	padding: 0px;
+	margin: 0px;
+	font-size: 14px;
+	font-family: monospace;
+}
+html {
+	overflow-y: scroll;
+}
+body {
+	background-color: #fff;
+}
+h1 {
+	margin-top: 5px;
+	margin-bottom: 5px;
+	font-size: 24px;
+	color: #096b6b;
+}
+h2 {
+	margin-top: 5px;
+	margin-bottom: 5px;
+	font-size: 18px;
+	color: #096b6b;
+}
+h3 {
+	margin-top: 5px;
+	margin-bottom: 5px;
+	font-size: 16px;
+	font-weight: bold;
+}
+p {
+	text-align: justify;
+	font-size: 14px;
+}
+dt {
+	margin-left: 20px;
+}
+dd {
+	margin-left: 40px;
+	font-style: italic;
+}
+li {
+	font-size: inherit;
+}
+hr {
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+.content {
+	margin-left: 20%;
+	margin-right: 20%;
+}
+table.navbar {
+	padding-left: 20%;
+	padding-right: 20%;
+	border-style: solid;
+	border-color: #096b6b;
+	background-color: #096b6b;
+	width: 100%;
+	table-layout: fixed;
+	position: sticky;
+	top: 0px;
+	margin-bottom: 5px;
+}
+table.navbar tr td:hover {
+	background-color: #019393;
+	cursor: pointer;
+}
+table.navbar tr td.active {
+	background-color: #114343;
+}
+table.navbar tr td button {
+	width: 100%;
+	border: none;
+	background-color: #00000000;
+	color: #ffffff;
+	font-size: 16px;
+	text-align: center;
+	text-decoration: none;
+}
+table.navbar tr td button:hover {
+	cursor: pointer;
+}
+button.bad {
+	width: 120px;
+	height: 30px;
+	border: none;
+	background-color: #bbb;
+	color: #ffffff;
+	font-size: 16px;
+	text-align: center;
+}
+button.bad:hover {
+	background-color: #999;
+	cursor: not-allowed;
+}
