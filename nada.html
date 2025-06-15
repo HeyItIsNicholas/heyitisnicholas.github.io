@@ -1,0 +1,100 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html>
+
+<!-- title of page and link to my stylesheet -->
+<head>
+	<title>NADA/NUDDIN</title>
+	<link href="style.css" rel="stylesheet">
+</head>
+
+<!-- body containing all visible page content -->
+<body>
+	<!-- navbar found at the top of the website -->
+	<table class="navbar" cellsize="auto" cellpadding="5px" border="5px">
+		<tr>
+			<td id="home" rowspan="2"><a href="index.html">
+				<center><img alt="nuddin logo" width="120px" height="40px" src="nuddin.png"></center>
+			</a></td>
+			<td><a href="index.html"><button>HOME</button></a></td>
+			<td><a href="about.html"><button>ABOUT</button></a></td>
+			<td><a href="faq.html"><button>FAQ</button></a></td>
+			<td><a href="careers.html"><button>CAREERS</button></a></td>
+			<td><a href="contact.html"><button>CONTACT</button></a></td>
+		</tr>
+		<tr>
+			<td class="active"><a href="nada.html"><button>NADA</button></a></td>
+			<td><a href="nothingPlus.html"><button>NOTHING+</button></a></td>
+			<td><a href="nothing.html"><button>NOTHING</button></a></td>
+			<td><a href="zilch.html"><button>ZILCH</button></a></td>
+			<td><a href="null.html"><button>NULL</button></a></td>
+		</tr>
+	</table>
+	
+	
+	<div class="content">
+		<!-- title of page, associated image, and product notes -->
+		<center><h1>Nada</h1></center>
+		<hr>
+		<table width="100%" cellsize="auto" cellpadding="0px" border="0px"><tr>
+			<td width="200px">
+				<center><img alt="[Na] nada logo" width="200px" height="300px" src="nada.png"></center>
+			</td>
+			<td>
+				<ul style="margin-left: 25px;">
+					<h3><li>Does nothing.</li></h3>
+					<h3><li>You won't like it.</li></h3>
+					<h3><li>It will tell you to leave it alone, but once you actually do that it will make them complain that you don't give them any attention despite just doing what they asked you to, leading to your untimely divorce and alimony payments.</li></h3>
+					<h3><li>Why did you leave Susan.</li></h3>
+					<h3><li>It doesn't exist.</li></h3>
+				</ul>
+			</td>
+		</tr></table>
+		<hr><br>
+		<!-- price and purchase button -->
+		<h2 style="font-size: 25px;">$999.99</h2>
+		<button class="bad">Unavailable</button><br><br>
+		<!-- product description -->
+		<p>
+			Nada is our newest development in the nothing-space. Unlike the rest of our products Nada has the unique capacity to be capable of human expression. We feel like this will truly make Nada stand out amongst the rest of our product family and is a feature that is not comparale to anything else you could find from our own product line or our competitor's.
+		</p><br>
+		<!-- product disclaimer -->
+		<p><i>
+			Disclaimer: NUDDIN is not responsible for any of the negatives that come from expressing desire in obtaining or procuring any of our products. Such negatives may include: mockery, bullying, harassment, and being called funny names.
+		</i></p><br><br>
+	</div>
+
+	<!-- script for hiding webpage content -->
+	<script>
+		document.querySelector("#home").addEventListener("mouseover", function(event){
+			document.querySelector(".content").style.display = "none"
+		})
+		document.querySelector("#home").addEventListener("mouseout", function(event){
+			document.querySelector(".content").style.display = "block"
+		})
+	</script>
+
+	<script type="module" src="https://s.brightspace.com/lib/bsi/20.23.2-185/unbundled/mathjax.js"></script>
+	<script type="text/javascript">
+		document.addEventListener('DOMContentLoaded', function() {
+			if (document.querySelector('math') || /\$\$|\\\(|\\\[|\\begin{|\\ref{|\\eqref{/.test(document.body.innerHTML)) {
+				document.querySelectorAll('mspace[linebreak="newline"]').forEach(elm => {
+					elm.setAttribute('style', 'display: block; height: 0.5rem;');
+				});
+				window.D2L.MathJax.loadMathJax({
+					'outputScale': 1.3,
+					'renderLatex': true
+				});
+			}
+		});
+	</script>
+	<script type="module" src="https://s.brightspace.com/lib/bsi/20.23.2-185/unbundled/prism.js"></script>
+	<script type="text/javascript">
+		document.addEventListener('DOMContentLoaded', function() {
+			document.querySelectorAll('.d2l-code').forEach(code => {
+				window.D2L.Prism.formatCodeElement(code);
+			});
+		});
+	</script>
+</body>
+
+
+</html>
